@@ -33,6 +33,12 @@ It turns out that Django comes with a few models already built in. We need to mi
 python manage.py migrate
 ```
 
+If you have added models of your own you need migrate those models with
+
+```
+python manage.py makemigrations
+```
+
 #### Create Super User
 
 ```

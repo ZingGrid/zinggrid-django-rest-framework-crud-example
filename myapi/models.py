@@ -11,3 +11,10 @@ class Hero(models.Model):
     birthday = models.DateField(auto_now=False, auto_now_add=True)
     def __str__(self):
         return self.name
+
+# Create your models here.
+class Todo(models.Model):
+    # id is auto generated primary key
+    item = models.CharField(max_length=60)
+    def __str__(self):
+        return self.name

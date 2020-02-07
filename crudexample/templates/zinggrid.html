@@ -3,19 +3,42 @@
     <head>
         <meta charset="utf-8">
         <title>Basic ZingGrid Example</title>
-        <script src="https://cdn.zinggrid.com/zinggrid.min.js" defer></script>
+        <!-- <script src="http://0.0.0.0:8082/lib/zinggrid.min.js" defer></script> -->
+        <script src="https://cdn.zinggrid.com/canary/zinggrid-canary.min.js" defer></script>
     </head>
 
     <body>
         <h1>{{ title }}</h1>
         <hr>
         <zing-grid 
-            caption="Django REST Example"
-            src="/heroes/"
+            caption="Django REST Framework Example"
+            src="/heroes"
             editor-controls>
             <zg-data>
                 <zg-param name="urlSuffix" value="/"></zg-param>
             </zg-data>
+        </zing-grid>
+
+        <hr>
+        <p>
+            The following example is identical to the first example except the <code>adapter</code>
+            allows a shortcut of custom `zg-params` that we already set for you!
+        </p>
+        <zing-grid 
+            caption="Django Adapter Example"
+            editor-controls>
+            <zg-data adapter="django" src="/heroes"></zg-data>
+        </zing-grid>
+
+        <hr>
+        <zing-grid 
+            caption="Django Custom REST Endpoint Example (Todos)"
+            src="/todos"
+            editor-controls>
+            <zg-colgroup>
+                <zg-column index="id" type="recordkey"></zg-column>
+                <zg-column index="item" type="text"></zg-column>
+            </zg-colgroup>
         </zing-grid>
     </body>
 </html>
