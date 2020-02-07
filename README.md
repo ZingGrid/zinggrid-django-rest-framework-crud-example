@@ -2,7 +2,7 @@
 
 Create a REST endpoint with Django and have a working UI component enabling CRUD in minutes!
 
-[Demo Video](https://share.getcloudapp.com/eDu9GZE4)
+![](https://d2ddoduugvun08.cloudfront.net/items/100A040j2m1r3X3a460B/Screen%20Recording%202020-02-07%20at%2003.29%20PM.gif)
 
 ## System Requirements
 
@@ -116,7 +116,7 @@ To add a trailing slash in ZingGrid add the `urlSuffix` to append a trailing sla
 </zing-grid>
 ```
 
-To add the trailing slash on your server use the `APPEND_SLASH` in your `settings.py` as directed in the [django docs](https://docs.djangoproject.com/en/dev/ref/settings/#append-slash)
+**Alternative** To add the trailing slash on your server use the `APPEND_SLASH` in your `settings.py` as directed in the [django docs](https://docs.djangoproject.com/en/dev/ref/settings/#append-slash)
 
 4. We have an optional `django` adapter to set the `zg-params` for you
 

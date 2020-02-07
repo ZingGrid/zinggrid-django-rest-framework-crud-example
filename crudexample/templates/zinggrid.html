@@ -31,6 +31,10 @@
         </zing-grid>
 
         <hr>
+        <p>
+            You can also check out our custom Django code for the todo list demo where we modify `views.py`, `urls.py`, `models.py` and `serializers.py` to
+            work with our default ZingGrid REST options.
+        </p>
         <zing-grid 
             caption="Django Custom REST Endpoint Example (Todos)"
             src="/todos"
@@ -40,7 +44,7 @@
                 knows what fields to send on create
             -->
             <zg-colgroup>
-                <zg-column index="id" type="recordkey"></zg-column>
+                <zg-column index="id"></zg-column>
                 <zg-column index="item" type="text"></zg-column>
             </zg-colgroup>
         </zing-grid>
