@@ -108,10 +108,37 @@ To add a trailing slash in ZingGrid add the `urlSuffix` to append a trailing sla
 ```html
 <zing-grid 
   caption="Django REST Example"
-  src="/heroes/"
+  src="/heroes"
   editor-controls>
   <zg-data>
     <zg-param name="urlSuffix" value="/"></zg-param>
   </zg-data>
+</zing-grid>
+```
+
+To add the trailing slash on your server use the `APPEND_SLASH` in your `settings.py` as directed in the [django docs](https://docs.djangoproject.com/en/dev/ref/settings/#append-slash)
+
+4. We have an optional `django` adapter to set the `zg-params` for you
+
+```html
+<zing-grid 
+    caption="Django Adapter Example"
+    editor-controls>
+    <zg-data adapter="django" src="/heroes"></zg-data>
+</zing-grid>
+```
+
+5. You can also check out our custom Django code for the todo list demo where we modify `views.py`, `urls.py`, `models.py` and `serializers.py` to
+  work with our default ZingGrid REST options.
+
+```html
+<zing-grid 
+    caption="Django Custom REST Endpoint Example (Todos)"
+    src="/todos"
+    editor-controls>
+    <zg-colgroup>
+        <zg-column index="id" type="recordkey"></zg-column>
+        <zg-column index="item" type="text"></zg-column>
+    </zg-colgroup>
 </zing-grid>
 ```

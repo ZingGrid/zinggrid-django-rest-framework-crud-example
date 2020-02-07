@@ -35,6 +35,10 @@
             caption="Django Custom REST Endpoint Example (Todos)"
             src="/todos"
             editor-controls>
+            <!-- 
+                We explicitly define our zg-columns so when there is not data the grid 
+                knows what fields to send on create
+            -->
             <zg-colgroup>
                 <zg-column index="id" type="recordkey"></zg-column>
                 <zg-column index="item" type="text"></zg-column>
